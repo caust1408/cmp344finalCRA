@@ -5,11 +5,11 @@ function recur(num,times) {			// takes parameter of number and the number of tim
 		return num;
 	}
 	else {
-		print('in else');			
-		print(num);
+		//print('in else');			
+		//print(num);
 		return num + recur(num,times -1);	// where the recursion takes place, it reduces the times by one each time and adding at the same time
 	}
 
 }
 
-print(recur(4,3));
+print(recur(5,10));
