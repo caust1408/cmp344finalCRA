@@ -1,10 +1,12 @@
 
 
-function mult(num1,num2) {				//takes 2 parameters
-	num1++;								// increments first and second number
-	num2++;
-	var ans = num1 * num2;				// multiplies the numbers and stores it in ans
-	print(ans);							// prints the answer out
-
+function mult(num1,num2) {				//takes 2 parameter						
+var temp1 = inc(num1);					// calls inc function for the first number
+var temp2 = inc(num2);					// calls inc function for the second number
+return temp1 * temp2;					// return the new result
 }
-mult(2,3);
+function inc(a) {						// increments a given value by 1
+ a++;
+ return a;								// returns that value 
+}
+print(mult(2,3));						// calls function
